@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <div class="background"></div>
+    <div class="content">
+        <h2 class="title">Weather App</h2>
+        <div class="card">
+            <!-- Input and Search Button -->
+            <div class="search-row">
+                <input id="input" type="text" placeholder="Enter City Name..." class="search-input">
+                <button id="search" type="button" class="search-btn">
+                    <img src="images/search.png" class="search-icon" alt="Search">
+                </button>
+            </div>
+
+            <!-- Loading / status message -->
+            <div id="status" class="status hidden"></div>
+
+            <!-- Cloud and Temperature Card -->
+            <div id="CloudTemp" class="cloud-temp hidden">
+                <img id="cloudImage" src="images/clouds.png" class="cloud-image" alt="Weather condition">
+                <div id="temp" class="temp"></div>
+                <div id="city" class="city"></div>
+            </div>
+
+            <!-- Humidity Card -->
+            <div id="humidityCard" class="humidity-card hidden">
+                <div class="info-item">
+                    <img src="images/humidity.png" class="info-icon" alt="Humidity">
+                    <div class="info-text">
+                        <div id="humidity" class="info-value"></div>
+                        <div class="info-label">Humidity</div>
+                    </div>
+                </div>
+
+                <!-- Wind Speed Card -->
+                <div id="windCard" class="info-item">
+                    <img src="images/wind.png" class="info-icon" alt="Wind speed">
+                    <div class="info-text">
+                        <div id="speed" class="info-value"></div>
+                        <div class="info-label">Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
